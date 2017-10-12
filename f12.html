@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const o = {
+        name: 'Julie',
+        greetBackwards: function() {
+          const self = this;
+          function getReverseName() {
+            let nameBackwards = '';
+            for(let i=this.name.length-1;i>=0;i--){
+              nameBackwards += o.name[i];
+            }
+            return nameBackwards;
+          }
+          return `${getReverseName()} si eman ym, olleh`;
+        },
+      };
+      console.log(o.greetBackwards());
+    </script>
+  </body>
+</html>

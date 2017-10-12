@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function update(name, birthYear, occupation) {
+        this.name = name;
+        this.birthYear = birthYear;
+        this.occupation = occupation;
+      }
+
+      console.log(update.call(bruce, 1949, 'singer'));
+      update.call(madeline, 1942, 'actress');
+    </script>
+  </body>
+</html>
